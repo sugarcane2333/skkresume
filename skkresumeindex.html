@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>苏克锴 · 个人简历</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: "Noto Sans SC", "Microsoft YaHei", sans-serif;
+            background: #eef2f7;
+            font-size: 15px;
+            line-height: 1.8;
+            color: #2c3e50;
+        }
+        /* A4标准简历 */
+        .resume {
+            width: 210mm;
+            min-height: 297mm;
+            display: flex;
+            margin: 20px auto;
+            background: #ffffff;
+            box-shadow: 0 10px 30px rgba(22, 43, 69, 0.12);
+        }
+
+        /* 左侧渐变侧边栏 层次配色 */
+        .sidebar {
+            width: 75mm;
+            background: linear-gradient(160deg, #152c4b 0%, #23436b 100%);
+            color: #f8f9fa;
+            padding: 45px 22px;
+        }
+        /* 证件照预留位 */
+        .photo-box {
+            width: 115px;
+            height: 150px;
+            border: 2px solid rgba(255,255,255,0.35);
+            border-radius: 8px;
+            margin: 0 auto 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: rgba(255,255,255,0.75);
+            font-size: 13px;
+            background: rgba(255,255,255,0.08);
+        }
+        .sidebar h3 {
+            font-size: 17px;
+            margin: 32px 0 14px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid rgba(255,255,255,0.2);
+            letter-spacing: 1px;
+            color: #e2e8f0;
+        }
+        .sidebar p {
+            font-size: 14px;
+            margin: 6px 0;
+            opacity: 0.92;
+            word-break: break-all;
+        }
+        .sidebar a {
+            color: #7dd3fc;
+            text-decoration: none;
+        }
+
+        /* 右侧主内容区 浅层次配色 */
+        .main {
+            flex: 1;
+            padding: 45px 40px;
+            background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+        }
+        .main h1 {
+            font-size: 36px;
+            color: #152c4b;
+            letter-spacing: 5px;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+        .job-intent {
+            color: #5a7184;
+            font-size: 16px;
+            margin-bottom: 38px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid #dbe3ec;
+        }
+        .main h2 {
+            font-size: 19px;
+            color: #1f3b5e;
+            margin: 30px 0 15px;
+            border-left: 5px solid #3b6ea5;
+            padding-left: 12px;
+            background: linear-gradient(90deg, rgba(59,110,165,0.08) 0%, transparent 100%);
+            line-height: 1.4;
+        }
+        .time-flex {
+            display: flex;
+            justify-content: space-between;
+            font-weight: 500;
+            color: #34495e;
+            margin-bottom: 8px;
+        }
+        ul {
+            padding-left: 22px;
+            color: #475569;
+        }
+        li {
+            margin: 9px 0;
+        }
+        .strong {
+            font-weight: 600;
+            color: #23436b;
+        }
+
+        /* 打印适配 */
+        @media print {
+            body {background:#fff;}
+            .resume {box-shadow: none;margin:0;}
+            .sidebar {background: #152c4b;}
+            .main {background: #fff;}
+        }
+    </style>
+</head>
+<body>
+<div class="resume">
+    <!-- 左侧侧边栏：照片+个人信息+联系方式 -->
+    <div class="sidebar">
+        <div class="photo-box">
+            <img src="skkphoto.jpg" alt="证件照" style="width:100%; height:100%; object-fit:cover; border-radius:6px;">
+        </div>
+
+        <h3>基本信息</h3>
+        <p>姓名：苏克锴</p>
+        <p>出生：2005.11</p>
+        <p>学历：全日制本科</p>
+        <p>院校：湖南科技大学</p>
+        <p>专业：经济学</p>
+
+        <h3>联系信息</h3>
+        <p>邮箱：sukekai@163.com</p>
+        <p>GitHub：
+            <a href="https://sugarcane2333.github.io" target="_blank">sugarcane2333.github.io</a>
+        </p>
+
+        <h3>个人优势</h3>
+        <p>金融竞赛经验丰富</p>
+        <p>经济学基础扎实</p>
+        <p>英语能力良好</p>
+        <p>擅长新技术学习</p>
+        <p>自律踏实 执行力强</p>
+    </div>
+
+    <!-- 右侧主体内容 -->
+    <div class="main">
+        <h1>苏克锴</h1>
+        <div class="job-intent">求职意向：经济分析、金融助理、经管类、市场调研、数据分析相关岗位</div>
+
+        <h2>教育背景</h2>
+        <div class="time-flex">
+            <span>湖南科技大学 · 经济学专业</span>
+            <span>2023.09 — 至今</span>
+        </div>
+        <ul>
+            <li>系统研习微观经济学、宏观经济学、货币银行学、证券投资学、计量经济学、财政学、统计学等核心课程，构建完整经济金融知识体系；</li>
+            <li>长期关注宏观经济政策、资本市场走势、指数基金与大类资产配置，具备独立行业信息搜集与简单分析能力；</li>
+            <li>在校学习态度端正，综合学业表现优异，凭借稳定成绩先后获得校级、国家级奖学金，综合素质良好。</li>
+        </ul>
+
+        <h2>语言资质</h2>
+        <ul>
+            <li><span class="strong">2024.06</span> 全国大学英语四级（CET-4）合格</li>
+            <li><span class="strong">2026.06</span> 全国大学英语六级（CET-6）合格</li>
+            <li>具备扎实的英语读写能力，能够熟练阅读经济、金融类外文文献、行业研报与公开资料。</li>
+        </ul>
+
+        <h2>学科竞赛荣誉</h2>
+        <ul>
+            <li><span class="strong">2025.11</span> 第十一届“东方财富杯”全国大学生金融挑战赛 ｜ 省赛二等奖</li>
+            <li><span class="strong">2025.01</span> 第三届全国ETF菁英挑战赛 ｜ 高校组优秀奖</li>
+            <li><span class="strong">2026.01</span> 第四届全国ETF模拟投资菁英挑战赛 ｜ 高校组三等奖</li>
+            <li>多次参与全国性金融类竞赛，熟悉模拟交易、指数投资、资产组合管理、风险控制与市场基本面分析。</li>
+        </ul>
+
+        <h2>学业奖项</h2>
+        <ul>
+            <li>2024—2025学年 荣获 湖南科技大学三等奖学金</li>
+            <li>2024—2025学年度 荣获 国家励志奖学金</li>
+        </ul>
+
+        <h2>综合技能</h2>
+        <ul>
+            <li>办公工具：熟练使用 Word、Excel、PPT，可独立完成数据整理、报表制作、文档排版与资料归档；</li>
+            <li>专业能力：掌握经济学基础理论、金融市场常识、ETF与基金投资基础知识，具备基础数据分析思维；</li>
+            <li>数字化能力：乐于接触并学习新技术、新工具，适应数字化办公环境，自主学习能力突出。</li>
+        </ul>
+
+        <h2>自我评价</h2>
+        <ul>
+            <li>经济学本科在读，专业基础夯实，兼具多项全国金融竞赛经历与权威学业奖项，综合竞争力突出；</li>
+            <li>逻辑思维清晰，做事严谨细致，具备良好的信息整合、文字梳理与自主学习能力；</li>
+            <li>热爱社会科学领域，心态积极上进，善于接纳新鲜事物与前沿技术，团队协作意识强，适配各类经管、金融类岗位工作需求。</li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
